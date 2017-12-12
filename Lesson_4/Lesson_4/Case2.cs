@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace Lesson_4
 {
@@ -22,6 +19,65 @@ namespace Lesson_4
             Random rnd = new Random();
             for (int i = 0; i < n; i++)
                 array_[i] = rnd.Next(min, max);
+        }
+
+        public void Read(string path)
+        {
+            try
+            {
+                StreamReader sr = new StreamReader(path);
+                int i = 0;
+                string str = null;
+
+                while ((str = sr.ReadLine()) != null)
+                {
+                    int result;
+
+                    if (!int.TryParse(str, out result))
+                    {
+                        Console.WriteLine("can't to parse value");
+
+                        return;
+                    }
+                    else
+                    {
+                        array_[i] = result;
+                        i++;
+                    }
+                }
+
+                sr.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
+        public void Write(string path)
+        {
+            if (array_.Length == 0)
+            {
+                Console.WriteLine("the array is empty");
+
+                return;
+            }
+
+            try
+            {
+                StreamWriter sw = new StreamWriter(path);
+
+                for (int i = 0; i < array_.Length; i++)
+                {
+                    sw.WriteLine(array_[i].ToString());
+                }
+
+                sw.Close();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
 
         public int Sum

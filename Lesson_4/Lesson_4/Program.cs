@@ -52,6 +52,17 @@ namespace Lesson_4
             Console.WriteLine("Max: " + case2.Max);
             Console.WriteLine("MaxCount: " + case2.MaxCount);
 
+            //б)*Добавить конструктор и методы, которые загружают данные из файла и записывают данные в файл.
+
+            Console.WriteLine("Введите путь к файлу");          
+            case2.Read(Console.ReadLine());
+            Console.WriteLine("Read file: " + case2.ToString());
+
+            case2.Write("2.txt");
+            Console.WriteLine("Write done");
+
+
+
             Console.ReadKey();
         }
     }
