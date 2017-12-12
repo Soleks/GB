@@ -54,7 +54,7 @@ namespace Lesson_4
 
             //б)*Добавить конструктор и методы, которые загружают данные из файла и записывают данные в файл.
 
-            Console.WriteLine("Введите путь к файлу");          
+            Console.WriteLine("Введите путь к файлу");
             case2.Read(Console.ReadLine());
             Console.WriteLine("Read file is done: " + case2.ToString());
 
@@ -62,7 +62,10 @@ namespace Lesson_4
             case2.Write("2.txt");
             Console.WriteLine("Write to file is done");
 
+            //3.Решить задачу с логинами из предыдущего урока, только логины и пароли считать из файла в массив.
 
+            Case3 case3 = new Case3();         
+            Console.WriteLine((case3.Login("login.txt") ? "Access granted" : "Access denied"));
 
             Console.ReadKey();
         }

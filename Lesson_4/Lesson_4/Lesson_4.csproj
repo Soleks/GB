@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Case1.cs" />
     <Compile Include="Case2.cs" />
+    <Compile Include="Case3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
