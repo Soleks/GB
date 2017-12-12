@@ -56,10 +56,11 @@ namespace Lesson_4
 
             Console.WriteLine("Введите путь к файлу");          
             case2.Read(Console.ReadLine());
-            Console.WriteLine("Read file: " + case2.ToString());
+            Console.WriteLine("Read file is done: " + case2.ToString());
 
+            Console.WriteLine("Write to file begin");
             case2.Write("2.txt");
-            Console.WriteLine("Write done");
+            Console.WriteLine("Write to file is done");
 
 
 
