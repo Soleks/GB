@@ -11,6 +11,7 @@ namespace Lesson_5
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             /*1.Создать программу, которая будет проверять 
@@ -34,6 +35,21 @@ namespace Lesson_5
             //2.Разработать методы для решения следующих задач.
             //Дано сообщение:
 
+            MyString myString = "1 22 333 4444 555555 666666 666666 55555";
+
+            //а) Вывести только те слова сообщения, которые содержат не более чем n букв;
+            myString.NSimbolsInWord(5);
+
+            //б) Удалить из сообщения все слова, которые заканчиваются на заданный символ;
+            myString.RemoveWord("4");
+
+            //в) Найти самое длинное слово сообщения;
+            myString.MaxLengthWord();
+
+            //г) Найти все самые длинные слова сообщения.
+
+            myString.MaxLengthWords();
+            myString.ShowMaxWords();
 
             Console.ReadKey();
         }
