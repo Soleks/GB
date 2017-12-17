@@ -51,6 +51,23 @@ namespace Lesson_5
             myString.MaxLengthWords();
             myString.ShowMaxWords();
 
+            /*3.  Для двух строк написать метод, определяющий, 
+                    является ли одна строка перестановкой другой.
+                    Регистр можно не учитывать.
+
+                а) с использованием методов C#
+                б) *разработав собственный алгоритм
+                Например:
+                badc являются перестановкой abcd
+            */
+
+
+            Case3 case3 = new Case3();
+
+            case3.Permutation("badc", "abcd");
+
+            Console.WriteLine((case3.Anagramma("badc", "abcd") ? "Anagramma" : "Not Anagramma"));
+
             Console.ReadKey();
         }
     }
