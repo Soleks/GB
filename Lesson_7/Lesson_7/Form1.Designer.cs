@@ -158,15 +158,15 @@
             // versionToolStripMenuItem
             // 
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
-            this.versionToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.versionToolStripMenuItem.Text = "Version";
             this.versionToolStripMenuItem.Click += new System.EventHandler(this.Version_Click);
             // 
             // rulesToolStripMenuItem
             // 
             this.rulesToolStripMenuItem.Name = "rulesToolStripMenuItem";
-            this.rulesToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
-            this.rulesToolStripMenuItem.Text = "Rules";
+            this.rulesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rulesToolStripMenuItem.Text = "Help";
             this.rulesToolStripMenuItem.Click += new System.EventHandler(this.Rules_Click);
             // 
             // Form1
