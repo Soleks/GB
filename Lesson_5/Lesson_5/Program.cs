@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,6 @@ namespace Lesson_5
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             /*1.Создать программу, которая будет проверять 
@@ -60,7 +60,6 @@ namespace Lesson_5
                 Например:
                 badc являются перестановкой abcd
             */
-
 
             Case3 case3 = new Case3();
 
