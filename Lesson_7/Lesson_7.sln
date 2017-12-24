@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_7", "Lesson_7\Lesson_7.csproj", "{A27D4B5A-2B45-411C-A0A8-0E52D7691948}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessNumber", "WindowsFormsApp1\GuessNumber.csproj", "{4B9521F8-AC30-48B6-8597-F45F49B2AD6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A27D4B5A-2B45-411C-A0A8-0E52D7691948}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A27D4B5A-2B45-411C-A0A8-0E52D7691948}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A27D4B5A-2B45-411C-A0A8-0E52D7691948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B9521F8-AC30-48B6-8597-F45F49B2AD6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B9521F8-AC30-48B6-8597-F45F49B2AD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B9521F8-AC30-48B6-8597-F45F49B2AD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B9521F8-AC30-48B6-8597-F45F49B2AD6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
