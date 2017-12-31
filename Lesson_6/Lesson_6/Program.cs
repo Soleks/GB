@@ -24,23 +24,24 @@ namespace Lesson_6
 
         static void Main(string[] args)
         {
-            //Minimum minimum = new Minimum("file.txt");
-            
-            //minimum.Func += new Minimum.Handler(OnF);
-            //minimum.FuncSin += new Minimum.Handler(OnF1);
+            Minimum minimum = new Minimum("file.txt");
 
-            //Console.WriteLine("Выберети функцию 1 или 2 ");
-            //int i;
-            //int.TryParse(Console.ReadLine(), out i);
+            minimum.Func += new Minimum.Handler(OnF);
+            minimum.FuncSin += new Minimum.Handler(OnF1);
 
-            //if (i == 1)
-            //{
-            //    minimum.SaveFunc(10, 10, true);
+            Console.WriteLine("Выберети функцию 1 или 2 ");
+            int i;
+            int.TryParse(Console.ReadLine(), out i);
 
-            //} else if(i == 2)
-            //{
-            //    minimum.SaveFunc(10, 10, false);
-            //}
+            if (i == 1)
+            {
+                minimum.SaveFunc(10, 10, true);
+
+            }
+            else if (i == 2)
+            {
+                minimum.SaveFunc(10, 10, false);
+            }
 
 
             /*
